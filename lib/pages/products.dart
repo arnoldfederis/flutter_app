@@ -15,6 +15,7 @@ class ProductsPage extends StatelessWidget {
             AppBar(
               automaticallyImplyLeading: false,
               title: Text('Choose'),
+              backgroundColor: Theme.of(context).accentColor,
             ),
             ListTile(
               title: Text('Manage Product'),
@@ -27,6 +28,7 @@ class ProductsPage extends StatelessWidget {
       ),
       appBar: AppBar(
         title: Text('Products'),
+        backgroundColor: Theme.of(context).accentColor,
       ),
       body: ProductManager(products),
     );

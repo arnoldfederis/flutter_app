@@ -19,17 +19,19 @@ class ProductAdminPage extends StatelessWidget {
               AppBar(
                 automaticallyImplyLeading: false,
                 title: Text('Choose'),
+                backgroundColor: Theme.of(context).accentColor,
               ),
               ListTile(
                 title: Text('Products Page'),
                 onTap: () {
-                  Navigator.pushReplacementNamed(context, '/');
+                  Navigator.pushReplacementNamed(context, '/products');
                 },
               ),
             ],
           ),
         ),
         appBar: AppBar(
+          backgroundColor: Theme.of(context).accentColor,
           title: Text('Manage Products'),
           bottom: TabBar(
             tabs: <Widget>[
