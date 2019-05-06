@@ -22,6 +22,10 @@ class ProductAdminPage extends StatelessWidget {
                 backgroundColor: Theme.of(context).accentColor,
               ),
               ListTile(
+                leading: Icon(
+                  Icons.shop,
+                  color: Colors.black,
+                ),
                 title: Text('Products Page'),
                 onTap: () {
                   Navigator.pushReplacementNamed(context, '/products');

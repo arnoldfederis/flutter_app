@@ -40,6 +40,7 @@ class ProductPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(title),
+          backgroundColor: Theme.of(context).accentColor,
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
